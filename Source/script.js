@@ -44,10 +44,16 @@ convertBtn.addEventListener("click", function () {
     resultBox.style.color = "#bdc3c7";
     if (Unitstatus === "°C") {
       resultBox.innerHTML =
-        tempAmount + "°c is equal to " + ((tempAmount * 9) / 5 + 32).toFixed(2) + "°F";
+        tempAmount +
+        "°c is equal to " +
+        ((tempAmount * 9) / 5 + 32).toFixed(2) +
+        "°F";
     } else {
       resultBox.innerHTML =
-        tempAmount + "°F is equal to " + ((tempAmount - 32) * 5/9).toFixed(2) + "°c";
+        tempAmount +
+        "°F is equal to " +
+        (((tempAmount - 32) * 5) / 9).toFixed(2) +
+        "°c";
     }
   }
 });
